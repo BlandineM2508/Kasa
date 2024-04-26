@@ -1,0 +1,31 @@
+.Header {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+  align-items: center;
+  width: 1240px;
+  .Logo {
+    display: flex;
+    width: 210px;
+  }
+
+  .Navbar {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+
+      .Link {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+      }
+    }
+  }
+}

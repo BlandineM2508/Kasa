@@ -1,0 +1,23 @@
+.Background_Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  margin-top: 60px;
+  height: 209px;
+  gap: 30px;
+}
+.Background_Footer .Logo_Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 122px;
+  height: 39px;
+}
+.Background_Footer .Texte_Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}/*# sourceMappingURL=footer.css.map */
