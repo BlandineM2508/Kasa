@@ -7,7 +7,7 @@ export default function Cards() {
     <div className="Background_Grid">
       <article className="Link_Card">
         {data.map((item) => (
-          <Link className="Card" key={item.id}>
+          <Link to={`/logements/${item.id}`} className="Card" key={item.id}>
             <p className="Title">{item.title}</p>
             <img className="Cover" src={item.cover} alt={item.title} />
           </Link>

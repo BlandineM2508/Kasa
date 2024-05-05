@@ -1,5 +1,6 @@
 .Banner {
   position: relative;
+  display: flex;
 }
 .Banner .Photo {
   display: flex;
@@ -17,8 +18,10 @@
 
 .Texte {
   position: absolute;
-  top: 45%;
-  left: 18%;
+  z-index: 1;
+  align-self: center;
+  top: 50%;
+  left: 255px;
   color: white;
   font-size: 48px;
   font-weight: 700;

@@ -1,11 +1,18 @@
-import Banner_Img from '../../public/assets/Banner_Img.svg'
 import '../style/banner.scss'
+import PropTypes from 'prop-types'
 
-export default function Banner() {
+const Banner = ({ texte, photo }) => {
   return (
     <div className="Banner">
-      <img className="Photo" src={Banner_Img} alt="banniere du site" />
-      <p className="Texte">Chez vous, partout et ailleurs</p>
+      <div className="Texte">{texte}</div>
+      <img src={photo} alt="photo de la bannière du site" className="Photo" />
     </div>
   )
 }
+
+Banner.propTypes = {
+  texte: PropTypes.string,
+  photo: PropTypes.string,
+}
+
+export default Banner

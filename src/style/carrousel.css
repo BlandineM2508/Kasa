@@ -1,0 +1,27 @@
+.Carrousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 425px;
+  width: 1240px;
+  margin-top: 30px;
+}
+.Carrousel .Left_Arrow {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+.Carrousel .Right_Arrow {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.Carrousel .Photo {
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 1240px;
+  height: 425px;
+  border-radius: 25px;
+}/*# sourceMappingURL=carrousel.css.map */

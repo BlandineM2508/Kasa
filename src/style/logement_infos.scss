@@ -1,0 +1,110 @@
+.Logement_Infos {
+  display: flex;
+  flex-direction: column;
+  width: 1240px;
+  margin-top: 30px;
+
+  .Div {
+    .Logement_Title {
+      position: relative;
+      font-size: 36px;
+      color: #ff6060;
+      margin-bottom: 10px;
+      max-width: 800px;
+    }
+
+    .Logement_Location {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .Logement_Host {
+      display: flex;
+      gap: 20px;
+      right: 440px;
+      top: 600px;
+      width: 175px;
+      position: absolute;
+
+      .Host_Picture {
+        display: flex;
+        border-radius: 100%;
+        height: 64px;
+        width: 64px;
+      }
+
+      .Host_Name {
+        display: flex;
+        color: #ff6060;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: right;
+        line-height: 25px;
+      }
+    }
+  }
+
+  .Logement_Tags {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+
+    .Tags {
+      border-radius: 10px;
+      background: #ff6060;
+      padding: 5px 25px;
+      font-size: 14px;
+      color: white;
+      font-weight: 700;
+    }
+  }
+
+  /*   .Toggle_Collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+
+    .Toggle_Title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      border-radius: 10px;
+      background: #ff6060;
+      padding: 0 15px 0 15px;
+      font-size: 18px;
+      color: white;
+      font-weight: 700;
+      width: 582px;
+      height: 52px;
+    }
+
+    .Arrow_Collapse {
+      cursor: pointer;
+    }
+
+    .Collapse_Content {
+      display: flex;
+      width: 570px;
+      font-size: 18px;
+      line-height: 25px;
+      padding: 25px;
+    }
+  } */
+
+  .Logement_Rating {
+    color: #ff6060;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    right: 440px;
+    top: 685px;
+
+    .Stars {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

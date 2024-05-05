@@ -1,13 +1,12 @@
 import Banner from '../components/banner'
 import Cards from '../components/cards'
-import Footer from '../components/footer'
+import Banner_Accueil from '../../public/assets/Banner_Img.svg'
 
 export default function Accueil() {
   return (
     <div>
-      <Banner />
+      <Banner texte="Chez vous, partout et ailleurs" photo={Banner_Accueil} />
       <Cards />
-      <Footer />
     </div>
   )
 }
