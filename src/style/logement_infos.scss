@@ -1,10 +1,10 @@
-.Logement_Infos {
+.Section_Logement_Infos {
   display: flex;
   flex-direction: column;
   width: 1240px;
   margin-top: 30px;
 
-  .Div {
+  .Logement_Infos {
     .Logement_Title {
       position: relative;
       font-size: 36px;
@@ -46,7 +46,7 @@
 
   .Logement_Tags {
     display: flex;
-    gap: 30px;
+    gap: 10px;
     margin-bottom: 30px;
 
     .Tags {
@@ -58,40 +58,6 @@
       font-weight: 700;
     }
   }
-
-  /*   .Toggle_Collapse {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 30px;
-
-    .Toggle_Title {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
-      border-radius: 10px;
-      background: #ff6060;
-      padding: 0 15px 0 15px;
-      font-size: 18px;
-      color: white;
-      font-weight: 700;
-      width: 582px;
-      height: 52px;
-    }
-
-    .Arrow_Collapse {
-      cursor: pointer;
-    }
-
-    .Collapse_Content {
-      display: flex;
-      width: 570px;
-      font-size: 18px;
-      line-height: 25px;
-      padding: 25px;
-    }
-  } */
 
   .Logement_Rating {
     color: #ff6060;

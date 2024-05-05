@@ -17,10 +17,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Header />
 
       <Routes>
-        <Route path="*" element={<ErrorPage />} />
         <Route path="/" element={<Accueil />} />
         <Route path="/a_propos" element={<A_Propos />} />
         <Route path="/logements/:id" element={<Logement_Page />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
 
       <Footer />
