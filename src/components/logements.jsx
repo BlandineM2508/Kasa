@@ -5,7 +5,6 @@ import '../style/toggle_collapse.scss'
 import Rating from './rating'
 import Arrow_Collapse from '../../public/assets/collapse_arrow.svg'
 import CollapseSection from './collapse'
-import ErrorPage from '../routes/error-page'
 
 export default function Logements() {
   const { id } = useParams() // Récupérez l'ID du logement depuis les paramètres d'URL
@@ -14,7 +13,6 @@ export default function Logements() {
   const logement = data.find((logement) => logement.id === id)
   console.log(logement)
 
-  // Affichage du titre et de la description du logement
   return (
     <div className="Section_Logement_Infos">
       <div className="Logement_Infos">

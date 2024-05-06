@@ -3,6 +3,8 @@
   flex-direction: column;
   width: 1240px;
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
   .Logement_Infos {
     .Logement_Title {
@@ -10,7 +12,6 @@
       font-size: 36px;
       color: #ff6060;
       margin-bottom: 10px;
-      max-width: 800px;
     }
 
     .Logement_Location {
@@ -21,7 +22,7 @@
     .Logement_Host {
       display: flex;
       gap: 20px;
-      right: 440px;
+      right: 305px;
       top: 600px;
       width: 175px;
       position: absolute;
@@ -65,8 +66,8 @@
     display: flex;
     flex-direction: row;
     gap: 18px;
-    right: 440px;
-    top: 685px;
+    right: 305px;
+    top: 688px;
 
     .Stars {
       width: 24px;

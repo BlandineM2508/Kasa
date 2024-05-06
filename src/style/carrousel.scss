@@ -6,9 +6,12 @@
   height: 425px;
   width: 1240px;
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
   .Left_Arrow {
     position: absolute;
+    z-index: 1;
     left: 20px;
     cursor: pointer;
   }
@@ -17,9 +20,10 @@
     position: absolute;
     right: 20px;
     cursor: pointer;
+    z-index: 1;
   }
 
-  .Photo {
+  .Photo_Carrousel {
     display: flex;
     object-fit: cover;
     width: 1240px;

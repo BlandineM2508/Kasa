@@ -8,7 +8,7 @@ import aboutList from '../../public/aboutList.json'
 export default function A_Propos() {
   return (
     <div>
-      <Banner photo={Banner_A_Propos} />
+      <Banner photo={Banner_A_Propos} homePage={false} />
       <div className="Toggle_Collapse_APropos">
         {aboutList.map((item, index) => (
           <CollapseSection

@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
-import A_Propos from '../routes/a_propos'
 
 const CollapseSection = ({
   title,

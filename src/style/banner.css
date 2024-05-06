@@ -1,29 +1,41 @@
 .Banner {
   position: relative;
   display: flex;
-}
-.Banner .Photo {
-  display: flex;
   justify-content: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  align-items: center;
   margin-top: 50px;
-  height: 300px;
-  width: 1240px;
-  border-radius: 25px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-  border: 1px solid #000000;
-  filter: brightness(50%);
 }
 
-.Texte {
+.Photo_Banner {
+  position: relative;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 1240px;
+  height: 223px;
+  border-radius: 25px;
+  filter: brightness(55%);
+}
+
+.Photo_BannerHome {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  border: 1px solid #000000;
+  position: relative;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 1240px;
+  height: 223px;
+  border-radius: 25px;
+  filter: brightness(55%);
+}
+
+.Texte_Banner {
   position: absolute;
-  z-index: 1;
-  align-self: center;
-  top: 50%;
-  left: 255px;
+  top: 40%;
+  left: 32%;
   color: white;
-  font-size: 48px;
+  font-size: 4vh;
   font-weight: 700;
   text-shadow: 1px 1px 4px #000, -1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000;
 }/*# sourceMappingURL=banner.css.map */

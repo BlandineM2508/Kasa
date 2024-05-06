@@ -3,7 +3,9 @@
   margin: 40px 0 0 0px;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .Header .Logo {
   display: flex;

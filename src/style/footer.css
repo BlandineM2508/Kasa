@@ -5,8 +5,8 @@
   align-items: center;
   background: black;
   margin-top: 60px;
-  height: 209px;
   gap: 30px;
+  min-height: 20vh;
 }
 .Background_Footer .Logo_Footer {
   display: flex;

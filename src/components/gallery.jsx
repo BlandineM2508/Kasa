@@ -56,7 +56,7 @@ const Gallery = () => {
       )}
       {logement && logement.pictures && (
         <img
-          className="Photo"
+          className="Photo_Carrousel"
           src={logement.pictures[currentIndex]}
           alt={`Image ${currentIndex + 1}`}
         />

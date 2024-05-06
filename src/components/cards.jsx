@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 
 export default function Cards() {
   return (
-    <div className="Background_Grid">
-      <article className="Link_Card">
+    <div className="Background_Card">
+      <article className="Link_Card ">
         {data.map((item) => (
           <Link to={`/logements/${item.id}`} className="Card" key={item.id}>
-            <p className="Title">{item.title}</p>
             <img className="Cover" src={item.cover} alt={item.title} />
+            <p className="Title">{item.title}</p>
           </Link>
         ))}
       </article>
