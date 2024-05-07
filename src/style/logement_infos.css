@@ -6,36 +6,19 @@
   margin-left: auto;
   margin-right: auto;
 }
+.Section_Logement_Infos .Logement_Infos {
+  position: relative;
+}
 .Section_Logement_Infos .Logement_Infos .Logement_Title {
   position: relative;
   font-size: 36px;
   color: #ff6060;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  line-height: 25px;
 }
 .Section_Logement_Infos .Logement_Infos .Logement_Location {
   font-size: 18px;
-  margin-bottom: 30px;
-}
-.Section_Logement_Infos .Logement_Infos .Logement_Host {
-  display: flex;
-  gap: 20px;
-  right: 305px;
-  top: 600px;
-  width: 175px;
-  position: absolute;
-}
-.Section_Logement_Infos .Logement_Infos .Logement_Host .Host_Picture {
-  display: flex;
-  border-radius: 100%;
-  height: 64px;
-  width: 64px;
-}
-.Section_Logement_Infos .Logement_Infos .Logement_Host .Host_Name {
-  display: flex;
-  color: #ff6060;
-  font-size: 18px;
-  font-weight: 500;
-  text-align: right;
+  margin-bottom: 25px;
   line-height: 25px;
 }
 .Section_Logement_Infos .Logement_Tags {
@@ -51,16 +34,98 @@
   color: white;
   font-weight: 700;
 }
-.Section_Logement_Infos .Logement_Rating {
+.Section_Logement_Infos .Host_and_Rating {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.Section_Logement_Infos .Host_and_Rating .Logement_Host {
+  display: flex;
+  gap: 20px;
+  right: 0px;
+  bottom: 80px;
+  width: 175px;
+  position: absolute;
+}
+.Section_Logement_Infos .Host_and_Rating .Logement_Host .Host_Picture {
+  display: flex;
+  border-radius: 100%;
+  height: 64px;
+  width: 64px;
+}
+.Section_Logement_Infos .Host_and_Rating .Logement_Host .Host_Name {
+  display: flex;
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: right;
+  line-height: 25px;
+}
+.Section_Logement_Infos .Host_and_Rating .Logement_Rating {
   color: #ff6060;
   position: absolute;
   display: flex;
   flex-direction: row;
-  gap: 18px;
-  right: 305px;
-  top: 688px;
+  gap: 10px;
+  right: 0px;
+  bottom: 30px;
 }
-.Section_Logement_Infos .Logement_Rating .Stars {
+.Section_Logement_Infos .Host_and_Rating .Logement_Rating .Stars {
   width: 24px;
   height: 24px;
+}
+
+@media screen and (max-width: 375px) {
+  .Section_Logement_Infos {
+    display: flex;
+    width: 335px;
+    margin-top: 15px;
+  }
+  .Section_Logement_Infos .Logement_Infos {
+    position: relative;
+  }
+  .Section_Logement_Infos .Logement_Infos .Logement_Title {
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+  .Section_Logement_Infos .Logement_Infos .Logement_Location {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .Section_Logement_Infos .Logement_Tags {
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  .Section_Logement_Infos .Logement_Tags .Tags {
+    font-size: 10px;
+  }
+  .Section_Logement_Infos .Host_and_Rating {
+    width: 335px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  .Section_Logement_Infos .Host_and_Rating .Logement_Host {
+    right: 0px;
+    bottom: 0px;
+    width: 100px;
+    height: 33px;
+    gap: 15px;
+  }
+  .Section_Logement_Infos .Host_and_Rating .Logement_Host .Host_Picture {
+    height: 32px;
+    width: 32px;
+  }
+  .Section_Logement_Infos .Host_and_Rating .Logement_Host .Host_Name {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .Section_Logement_Infos .Host_and_Rating .Logement_Rating {
+    left: 0px;
+    bottom: 10px;
+  }
+  .Section_Logement_Infos .Host_and_Rating .Logement_Rating .Stars {
+    width: 13px;
+    height: 13px;
+  }
 }/*# sourceMappingURL=logement_infos.css.map */

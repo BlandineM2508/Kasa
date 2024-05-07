@@ -28,4 +28,24 @@
   width: 1240px;
   height: 425px;
   border-radius: 25px;
+}
+
+@media screen and (max-width: 375px) {
+  .Carrousel {
+    width: 335px;
+    height: 255px;
+  }
+  .Carrousel .Left_Arrow {
+    width: 11px;
+    height: 19px;
+  }
+  .Carrousel .Right_Arrow {
+    width: 11px;
+    height: 19px;
+  }
+  .Carrousel .Photo_Carrousel {
+    width: 335px;
+    height: 255px;
+    border-radius: 10px;
+  }
 }/*# sourceMappingURL=carrousel.css.map */

@@ -7,23 +7,47 @@
   margin-right: auto;
 
   .Logement_Infos {
+    position: relative;
     .Logement_Title {
       position: relative;
       font-size: 36px;
       color: #ff6060;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      line-height: 25px;
     }
 
     .Logement_Location {
       font-size: 18px;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
+      line-height: 25px;
     }
+  }
+
+  .Logement_Tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    .Tags {
+      border-radius: 10px;
+      background: #ff6060;
+      padding: 5px 25px;
+      font-size: 14px;
+      color: white;
+      font-weight: 700;
+    }
+  }
+
+  .Host_and_Rating {
+    display: flex;
+    position: relative;
+    flex-direction: column;
 
     .Logement_Host {
       display: flex;
       gap: 20px;
-      right: 305px;
-      top: 600px;
+      right: 0px;
+      bottom: 80px;
       width: 175px;
       position: absolute;
 
@@ -43,35 +67,86 @@
         line-height: 25px;
       }
     }
-  }
 
-  .Logement_Tags {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 30px;
+    .Logement_Rating {
+      color: #ff6060;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      right: 0px;
+      bottom: 30px;
 
-    .Tags {
-      border-radius: 10px;
-      background: #ff6060;
-      padding: 5px 25px;
-      font-size: 14px;
-      color: white;
-      font-weight: 700;
+      .Stars {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
+}
 
-  .Logement_Rating {
-    color: #ff6060;
-    position: absolute;
+@media screen and (max-width: 375px) {
+  .Section_Logement_Infos {
     display: flex;
-    flex-direction: row;
-    gap: 18px;
-    right: 305px;
-    top: 688px;
 
-    .Stars {
-      width: 24px;
-      height: 24px;
+    width: 335px;
+    margin-top: 15px;
+
+    .Logement_Infos {
+      position: relative;
+      .Logement_Title {
+        font-size: 18px;
+        margin-bottom: 0px;
+      }
+
+      .Logement_Location {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .Logement_Tags {
+      gap: 10px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+
+      .Tags {
+        font-size: 10px;
+      }
+    }
+
+    .Host_and_Rating {
+      width: 335px;
+      height: 40px;
+      margin-bottom: 20px;
+
+      .Logement_Host {
+        right: 0px;
+        bottom: 0px;
+        width: 100px;
+        height: 33px;
+        gap: 15px;
+
+        .Host_Picture {
+          height: 32px;
+          width: 32px;
+        }
+
+        .Host_Name {
+          font-size: 12px;
+          line-height: 17px;
+        }
+      }
+
+      .Logement_Rating {
+        left: 0px;
+        bottom: 10px;
+
+        .Stars {
+          width: 13px;
+          height: 13px;
+        }
+      }
     }
   }
 }

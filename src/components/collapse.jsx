@@ -6,7 +6,7 @@ const CollapseSection = ({
   initialCollapsed,
   icon,
   children,
-  proposPage,
+  classNames,
 }) => {
   const [collapsed, setCollapsed] = useState(initialCollapsed)
 
@@ -16,10 +16,10 @@ const CollapseSection = ({
 
   return (
     <div>
-      <div className={`Toggle_Title${proposPage ? 'APropos' : ''}`}>
+      <div className={classNames.Collapse_Title}>
         <span>{title}</span>
         <img
-          className="Arrow_Collapse"
+          className={classNames.Collapse_Arrow}
           onClick={toggleCollapse}
           src={icon}
           alt="flèche cliquable de la section"
@@ -28,7 +28,9 @@ const CollapseSection = ({
           }}
         />
       </div>
-      {!collapsed && <div className="Collapse_Content">{children}</div>}
+      {!collapsed && (
+        <div className={classNames.Collapse_Content}>{children}</div>
+      )}
     </div>
   )
 }
@@ -38,7 +40,11 @@ CollapseSection.propTypes = {
   initialCollapsed: PropTypes.bool,
   icon: PropTypes.string,
   children: PropTypes.node,
-  proposPage: PropTypes.bool,
+  classNames: PropTypes.shape({
+    Collapse_Title: PropTypes.string,
+    Collapse_Arrow: PropTypes.string,
+    Collapse_Content: PropTypes.string,
+  }), // Utilisez shape pour spécifier un objet avec des propriétés spécifiques
 }
 
 export default CollapseSection

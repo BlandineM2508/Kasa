@@ -1,15 +1,11 @@
 import '../style/banner.scss'
 import PropTypes from 'prop-types'
 
-const Banner = ({ texte, photo, homePage }) => {
+const Banner = ({ texte, photo, alt, className }) => {
   return (
     <div className="Banner">
-      <img
-        src={photo}
-        alt="photo de la bannière du site"
-        className={`Photo_Banner${homePage ? 'Home' : ''}`}
-      />
-      <p className="Texte_Banner">{texte}</p>
+      <img src={photo} alt={alt} className={className} />
+      <p className="Tagline_Banner">{texte}</p>
     </div>
   )
 }
@@ -17,7 +13,8 @@ const Banner = ({ texte, photo, homePage }) => {
 Banner.propTypes = {
   texte: PropTypes.string,
   photo: PropTypes.string,
-  homePage: PropTypes.bool,
+  className: PropTypes.string,
+  alt: PropTypes.string,
 }
 
 export default Banner

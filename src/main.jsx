@@ -4,7 +4,7 @@ import './style/index.scss'
 import './style/global.scss'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ErrorPage from './routes/error-page.jsx'
-import Accueil from './routes/index.jsx'
+import Home from './routes/home.jsx'
 import A_Propos from './routes/a_propos.jsx'
 import Header from './components/header.jsx'
 import Footer from './components/footer.jsx'
@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Header />
 
       <Routes>
-        <Route path="/" element={<Accueil />} />
+        <Route path="/" element={<Home />} />
         <Route path="/a_propos" element={<A_Propos />} />
         <Route path="/logements/:id" element={<Logement_Page />} />
         <Route path="*" element={<ErrorPage />} />

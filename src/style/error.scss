@@ -3,9 +3,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
+  gap: 40px;
+  margin-top: 40px;
 
   .Error {
     color: #ff6060;
@@ -14,12 +13,24 @@
     line-height: 410px;
   }
 
-  .Error_Txt {
-    color: #ff6060;
-    font-size: 36px;
-    line-height: 51px;
-    font-weight: 500;
-    margin-top: 20px;
+  .Error_Message {
+    display: flex;
+    flex-direction: row;
+
+    .Error_Tagline {
+      color: #ff6060;
+      font-size: 36px;
+      line-height: 50px;
+      font-weight: 500;
+      margin-bottom: 80px;
+    }
+
+    .Span_Error {
+      color: #ff6060;
+      font-size: 36px;
+      line-height: 50px;
+      font-weight: 500;
+    }
   }
 
   .Error_Link {
@@ -27,6 +38,46 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 25px;
-    margin: 100px 0 80px 0;
+    margin-bottom: 55px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Section_Error {
+    margin: 0;
+    gap: 90px;
+    height: 350px;
+
+    .Error {
+      font-size: 96px;
+      height: 250px;
+    }
+
+    .Error_Message {
+      .Error_Tagline {
+        color: #ff6060;
+        font-size: 18px;
+        text-align: center;
+        line-height: 25px;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      .Span_Error {
+        color: #ff6060;
+        font-size: 18px;
+        text-align: center;
+        line-height: 25px;
+        font-weight: 500;
+        margin: 0;
+      }
+    }
+
+    .Error_Link {
+      color: black;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 19px;
+    }
   }
 }

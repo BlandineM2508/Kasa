@@ -12,8 +12,8 @@ const Rating = ({ rating }) => {
     const stars = []
     for (let i = 0; i < filledStars; i++) {
       stars.push(
-        <div className="Stars" key={i}>
-          <img src={Star_Filled} alt="etoile remplie" />
+        <div key={i}>
+          <img className="Stars" src={Star_Filled} alt="etoile remplie" />
         </div>
       )
     }
@@ -25,8 +25,8 @@ const Rating = ({ rating }) => {
     const stars = []
     for (let i = 0; i < emptyStars; i++) {
       stars.push(
-        <div className="Stars" key={i + filledStars}>
-          <img src={Star_Empty} alt="etoile vide" />
+        <div key={i + filledStars}>
+          <img className="Stars" src={Star_Empty} alt="etoile vide" />
         </div>
       )
     }

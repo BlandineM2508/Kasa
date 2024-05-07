@@ -1,65 +1,113 @@
-.Toggle_Collapse {
+.Container_Logement {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  gap: 30px;
 }
-.Toggle_Collapse .Toggle_Title {
+.Container_Logement .Collapse_Title_Logement {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   border-radius: 10px;
   background: #ff6060;
-  padding: 0 15px 0 15px;
+  padding: 10px 15px;
   font-size: 18px;
   color: white;
   font-weight: 700;
   width: 582px;
   height: 52px;
+  line-height: 25px;
 }
-.Toggle_Collapse .Arrow_Collapse {
+.Container_Logement .Collapse_Title_Logement .Collapse_Arrow_Logement {
+  width: 24px;
   cursor: pointer;
 }
-.Toggle_Collapse .Collapse_Content {
+.Container_Logement .Collapse_Content_Logement {
   display: flex;
-  width: 570px;
+  flex-direction: column;
+  width: 582px;
   font-size: 18px;
   line-height: 25px;
-  padding: 25px;
+  padding: 25px 20px 19px 20px;
+  text-align: left;
   background: rgba(246, 246, 246, 0.4509803922);
 }
 
-.Toggle_Collapse_APropos {
+.Container_APropos {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 40px;
-  margin-top: 40px;
 }
-.Toggle_Collapse_APropos .Toggle_TitleAPropos {
+.Container_APropos .Collapse_Title_APropos {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
   background: #ff6060;
-  padding: 0 15px 0 15px;
+  padding: 10px 15px;
   font-size: 18px;
   color: white;
   font-weight: 700;
   width: 1023px;
   height: 52px;
+  line-height: 34px;
+  margin-top: 40px;
 }
-.Toggle_Collapse_APropos .Arrow_Collapse {
+.Container_APropos .Collapse_Title_APropos .Collapse_Arrow_APropos {
+  width: 24px;
   cursor: pointer;
 }
-.Toggle_Collapse_APropos .Collapse_Content_APropos {
+.Container_APropos .Collapse_Content_APropos {
   display: flex;
+  flex-direction: column;
   width: 1025px;
   font-size: 18px;
   line-height: 25px;
   padding: 25px;
   text-align: left;
   background: rgba(246, 246, 246, 0.4509803922);
+}
+
+@media screen and (max-width: 375px) {
+  .Container_Logement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .Container_Logement .Collapse_Title_Logement {
+    font-size: 13px;
+    width: 335px;
+    height: 30px;
+  }
+  .Container_Logement .Collapse_Title_Logement .Collapse_Arrow_Logement {
+    width: 16px;
+  }
+  .Container_Logement .Collapse_Content_Logement {
+    width: 335px;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 20px 19px 20px;
+  }
+  .Container_APropos {
+    margin-bottom: 200px;
+  }
+  .Container_APropos .Collapse_Title_APropos {
+    font-size: 13px;
+    color: white;
+    font-weight: 700;
+    width: 335px;
+    height: 30px;
+    margin-top: 20px;
+  }
+  .Container_APropos .Collapse_Title_APropos .Collapse_Arrow_APropos {
+    width: 16px;
+    cursor: pointer;
+  }
+  .Container_APropos .Collapse_Content_APropos {
+    width: 335px;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 20px 19px 20px;
+  }
 }/*# sourceMappingURL=toggle_collapse.css.map */

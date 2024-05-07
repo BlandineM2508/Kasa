@@ -4,11 +4,10 @@
   justify-content: center;
   align-items: center;
   background: black;
-  margin-top: 60px;
-
+  margin-top: 55px;
   gap: 30px;
-
-  min-height: 20vh;
+  width: 100%;
+  height: 209px;
 
   .Logo_Footer {
     display: flex;
@@ -18,10 +17,23 @@
     height: 39px;
   }
 
-  .Texte_Footer {
+  .Tagline_Footer {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Background_Footer {
+    width: 100%;
+    height: 209px;
+    margin-top: 30px;
+  }
+
+  .Tagline_Footer {
+    width: 133px;
+    text-align: center;
   }
 }

@@ -31,3 +31,26 @@
     border-radius: 25px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .Carrousel {
+    width: 335px;
+    height: 255px;
+
+    .Left_Arrow {
+      width: 11px;
+      height: 19px;
+    }
+
+    .Right_Arrow {
+      width: 11px;
+      height: 19px;
+    }
+
+    .Photo_Carrousel {
+      width: 335px;
+      height: 255px;
+      border-radius: 10px;
+    }
+  }
+}

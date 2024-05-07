@@ -5,37 +5,65 @@
   align-items: center;
   margin-top: 50px;
 }
-
-.Photo_Banner {
-  position: relative;
-  display: block;
+.Banner .Photo_BannerAPropos {
+  display: flex;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 1240px;
-  height: 223px;
   border-radius: 25px;
   filter: brightness(55%);
+  width: 100%;
+  max-width: 1240px;
+  height: 223px;
 }
-
-.Photo_BannerHome {
+.Banner .Photo_BannerHome {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   border: 1px solid #000000;
-  position: relative;
-  display: block;
+  max-height: 223px;
+  display: flex;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 1240px;
-  height: 223px;
+  width: 100%;
+  max-width: 1240px;
   border-radius: 25px;
   filter: brightness(55%);
+  -o-object-position: 0px -305px;
+     object-position: 0px -305px;
 }
-
-.Texte_Banner {
+.Banner .Tagline_Banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 40%;
-  left: 32%;
+  width: 100%;
+  text-align: center;
   color: white;
-  font-size: 4vh;
+  font-size: 48px;
   font-weight: 700;
   text-shadow: 1px 1px 4px #000, -1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000;
+}
+
+@media screen and (max-width: 375px) {
+  .Banner {
+    margin-top: 20px;
+  }
+  .Banner .Photo_BannerAPropos {
+    height: 111px;
+    width: 335px;
+    border-radius: 10px;
+  }
+  .Banner .Photo_BannerHome {
+    height: 111px;
+    width: 335px;
+    box-shadow: none;
+    border-radius: 10px;
+    -o-object-position: 0px -40px;
+       object-position: 0px -40px;
+  }
+  .Banner .Tagline_Banner {
+    font-size: 24px;
+    width: 225px;
+    left: 35px;
+    text-shadow: none;
+    text-align: left;
+  }
 }/*# sourceMappingURL=banner.css.map */
