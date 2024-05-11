@@ -32,9 +32,9 @@ const Gallery = () => {
         currentIndex === logement.pictures.length - 1 ? 0 : currentIndex + 1
       setCurrentIndex(newIndex)
     }
+    console.log(currentIndex, logement.pictures.length)
   }
 
-  console.log(currentIndex)
   return (
     <div className="Carrousel">
       {logement && logement.pictures && logement.pictures.length > 1 && (
@@ -52,6 +52,9 @@ const Gallery = () => {
             src={Right_Arrow}
             alt="fleche de droite"
           />
+          <div className="Index_Indication">
+            {currentIndex + 1} / {logement.pictures.length}
+          </div>
         </>
       )}
       {logement && logement.pictures && (

@@ -16,7 +16,12 @@ const CollapseSection = ({
 
   return (
     <div>
-      <div className={classNames.Collapse_Title}>
+      <div
+        className={`Collapse_Title_Logement & Collapse_Title_APropos ${
+          collapsed ? 'open' : ''
+        }`}
+        onClick={toggleCollapse}
+      >
         <span>{title}</span>
         <img
           className={classNames.Collapse_Arrow}
@@ -44,7 +49,8 @@ CollapseSection.propTypes = {
     Collapse_Title: PropTypes.string,
     Collapse_Arrow: PropTypes.string,
     Collapse_Content: PropTypes.string,
-  }), // Utilisez shape pour spécifier un objet avec des propriétés spécifiques
+    open: PropTypes.string, // Ajoutez la classe pour le titre lorsque le collapse est ouvert
+  }),
 }
 
 export default CollapseSection

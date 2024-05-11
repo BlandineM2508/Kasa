@@ -1,18 +1,18 @@
 .Background_Card {
   background: #f6f6f6;
   margin-top: 60px;
-  padding: 60px;
+  padding: 50px;
   border-radius: 25px;
-  max-width: 1240px;
-  margin-left: auto;
-  margin-right: auto;
+
+  margin-left: 80px;
+  margin-right: 80px;
   z-index: 0;
 
   .Link_Card {
     display: grid;
-    gap: 51px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+    grid-template-rows: auto;
 
     .Card {
       position: relative;
@@ -35,7 +35,7 @@
       .Cover {
         display: flex;
         object-fit: cover;
-        width: 340px;
+        width: 100%;
         height: 340px;
         border-radius: 10px;
       }
@@ -57,28 +57,24 @@
       width: 100%;
       height: 100%;
       border-radius: 10px;
-
       opacity: 1;
       z-index: 1;
     }
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1024px) {
   .Background_Card {
     background: none;
     margin: 20px;
     padding: 0px;
 
     .Link_Card {
-      justify-content: center;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(1, 1fr);
-
       .Card {
         .Cover {
-          width: 335px;
+          width: 100%;
           height: 255px;
           border-radius: 10px;
         }

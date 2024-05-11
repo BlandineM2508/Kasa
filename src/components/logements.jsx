@@ -65,6 +65,7 @@ export default function Logements() {
             Collapse_Title: 'Collapse_Title_Logement',
             Collapse_Arrow: 'Collapse_Arrow_Logement',
             Collapse_Content: 'Collapse_Content_Logement',
+            collapsed: 'open',
           }}
         >
           {logement.description}
@@ -78,6 +79,7 @@ export default function Logements() {
             Collapse_Title: 'Collapse_Title_Logement',
             Collapse_Arrow: 'Collapse_Arrow_Logement',
             Collapse_Content: 'Collapse_Content_Logement',
+            collapsed: 'open',
           }}
         >
           <ul>

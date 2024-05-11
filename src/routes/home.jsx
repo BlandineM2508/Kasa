@@ -4,7 +4,7 @@ import Banner_Home from '../../public/assets/banner_home.png'
 
 export default function Home() {
   return (
-    <div>
+    <div className="content">
       <Banner
         texte="Chez vous, partout et ailleurs"
         photo={Banner_Home}

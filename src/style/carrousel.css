@@ -4,10 +4,9 @@
   justify-content: center;
   align-items: center;
   height: 425px;
-  width: 1240px;
   margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 .Carrousel .Left_Arrow {
   position: absolute;
@@ -21,31 +20,47 @@
   cursor: pointer;
   z-index: 1;
 }
+.Carrousel .Index_Indication {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 48.5%;
+  margin-bottom: 35px;
+  color: white;
+}
 .Carrousel .Photo_Carrousel {
   display: flex;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 1240px;
+  width: 100%;
   height: 425px;
   border-radius: 25px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1024px) {
   .Carrousel {
-    width: 335px;
     height: 255px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .Carrousel .Left_Arrow {
-    width: 11px;
     height: 19px;
+    left: 30px;
+    top: 125px;
   }
   .Carrousel .Right_Arrow {
-    width: 11px;
     height: 19px;
+    right: 30px;
+    top: 125px;
+  }
+  .Carrousel .Index_Indication {
+    display: none;
   }
   .Carrousel .Photo_Carrousel {
-    width: 335px;
+    width: 100%;
     height: 255px;
     border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }/*# sourceMappingURL=carrousel.css.map */

@@ -4,10 +4,12 @@
   justify-content: center;
   align-items: center;
   background: black;
-  margin-top: 55px;
   gap: 30px;
+
+  position: absolute;
+  bottom: -250px;
+  height: 200px;
   width: 100%;
-  height: 209px;
 
   .Logo_Footer {
     display: flex;
@@ -25,15 +27,11 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1024px) {
   .Background_Footer {
-    width: 100%;
-    height: 209px;
-    margin-top: 30px;
-  }
-
-  .Tagline_Footer {
-    width: 133px;
-    text-align: center;
+    .Tagline_Footer {
+      width: 133px;
+      text-align: center;
+    }
   }
 }

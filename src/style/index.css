@@ -22,11 +22,16 @@ a:hover {
   text-decoration: underline;
 }
 
+body,
+html {
+  height: auto;
+  position: relative;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  display: block;
-  place-items: center;
-  justify-content: center;
 }
 
 h1 {

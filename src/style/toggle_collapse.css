@@ -1,41 +1,46 @@
 .Container_Logement {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
 }
 .Container_Logement .Collapse_Title_Logement {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 5px;
   background: #ff6060;
   padding: 10px 15px;
   font-size: 18px;
   color: white;
   font-weight: 700;
-  width: 582px;
-  height: 52px;
+  width: 100%;
   line-height: 25px;
+  transition: border-radius 0.3s ease;
 }
 .Container_Logement .Collapse_Title_Logement .Collapse_Arrow_Logement {
   width: 24px;
   cursor: pointer;
 }
+.Container_Logement .Collapse_Title_Logement.open {
+  border-radius: 10px;
+}
 .Container_Logement .Collapse_Content_Logement {
   display: flex;
   flex-direction: column;
-  width: 582px;
+  width: 100%;
   font-size: 18px;
   line-height: 25px;
   padding: 25px 20px 19px 20px;
   text-align: left;
   background: rgba(246, 246, 246, 0.4509803922);
+  width: 100%;
 }
 
 .Container_APropos {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  position: relative;
 }
 .Container_APropos .Collapse_Title_APropos {
   display: flex;
@@ -48,8 +53,7 @@
   font-size: 18px;
   color: white;
   font-weight: 700;
-  width: 1023px;
-  height: 52px;
+  width: 100%;
   line-height: 34px;
   margin-top: 40px;
 }
@@ -57,10 +61,13 @@
   width: 24px;
   cursor: pointer;
 }
+.Container_APropos .Collapse_Title_APropos.open {
+  border-radius: 10px;
+}
 .Container_APropos .Collapse_Content_APropos {
   display: flex;
   flex-direction: column;
-  width: 1025px;
+  width: 100%;
   font-size: 18px;
   line-height: 25px;
   padding: 25px;
@@ -68,7 +75,7 @@
   background: rgba(246, 246, 246, 0.4509803922);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1024px) {
   .Container_Logement {
     display: flex;
     flex-direction: column;
@@ -77,7 +84,7 @@
   }
   .Container_Logement .Collapse_Title_Logement {
     font-size: 13px;
-    width: 335px;
+    width: 100%;
     height: 30px;
   }
   .Container_Logement .Collapse_Title_Logement .Collapse_Arrow_Logement {
@@ -90,13 +97,13 @@
     padding: 20px 20px 19px 20px;
   }
   .Container_APropos {
-    margin-bottom: 200px;
+    margin: 15px 20px 0px 20px;
   }
   .Container_APropos .Collapse_Title_APropos {
     font-size: 13px;
     color: white;
     font-weight: 700;
-    width: 335px;
+    width: 100%;
     height: 30px;
     margin-top: 20px;
   }
@@ -105,7 +112,6 @@
     cursor: pointer;
   }
   .Container_APropos .Collapse_Content_APropos {
-    width: 335px;
     font-size: 12px;
     line-height: 17px;
     padding: 20px 20px 19px 20px;

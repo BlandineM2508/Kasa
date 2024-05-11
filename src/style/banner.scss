@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
 
   .Photo_BannerAPropos {
     display: flex;
@@ -11,7 +13,6 @@
     border-radius: 25px;
     filter: brightness(55%);
     width: 100%;
-    max-width: 1240px;
     height: 223px;
   }
 
@@ -22,10 +23,9 @@
     display: flex;
     object-fit: cover;
     width: 100%;
-    max-width: 1240px;
     border-radius: 25px;
     filter: brightness(55%);
-    object-position: 0px -305px;
+    object-position: 0px -260px;
   }
 
   .Tagline_Banner {
@@ -43,18 +43,22 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1024px) {
   .Banner {
     margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
     .Photo_BannerAPropos {
+      margin: 15px 20px 0px 20px;
       height: 111px;
-      width: 335px;
+      width: 100%;
       border-radius: 10px;
     }
 
     .Photo_BannerHome {
+      margin: 15px 20px 0px 20px;
       height: 111px;
-      width: 335px;
+      width: 100%;
       box-shadow: none;
       border-radius: 10px;
       object-position: 0px -40px;
@@ -62,10 +66,17 @@
 
     .Tagline_Banner {
       font-size: 24px;
+      left: 20px;
+      top: 55px;
       width: 225px;
-      left: 35px;
+      height: 25px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      align-self: center;
       text-shadow: none;
       text-align: left;
+      margin-left: 30px;
     }
   }
 }

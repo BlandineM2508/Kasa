@@ -5,6 +5,8 @@
   flex-direction: column;
   gap: 40px;
   margin-top: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
 
   .Error {
     color: #ff6060;
@@ -42,7 +44,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1024px) {
   .Section_Error {
     margin: 0;
     gap: 90px;
