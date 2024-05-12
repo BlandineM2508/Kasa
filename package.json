@@ -1,5 +1,5 @@
 {
-  "homepage": "https://blandinem2508.github.io/Kasa/",
+  "homepage": "https://blandinem2508.github.io/kasa-oc/",
   "name": "kasa-oc",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "master -d build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
