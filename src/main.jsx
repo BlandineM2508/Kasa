@@ -13,7 +13,7 @@ import Logement_Page from './routes/logements_page.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Router>
+    <Router basename="/Kasa_OC">
       <Header />
 
       <Routes>
