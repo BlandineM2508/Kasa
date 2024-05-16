@@ -9,7 +9,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: aqua;
 }
 
 a {
@@ -24,13 +23,22 @@ a:hover {
 
 body,
 html {
-  height: auto;
-  position: relative;
+  height: 100%;
+  margin: 0;
 }
 body {
   display: flex;
   flex-direction: column;
-  margin: 0;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
 }
 
 h1 {

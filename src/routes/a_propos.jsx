@@ -1,5 +1,5 @@
 import Banner from '../components/banner'
-import Banner_A_Propos from '../../public/assets/banner_a_propos.png'
+import Banner_A_Propos from '../../public/assets/banner_a_propos.webp'
 import CollapseSection from '../components/collapse'
 import Arrow_Collapse from '../../public/assets/collapse_arrow.svg'
 import '../style/logement_infos.scss'
@@ -7,7 +7,7 @@ import aboutList from '../../public/aboutList.json'
 
 export default function A_Propos() {
   return (
-    <div className="content">
+    <div className="layout">
       <Banner
         photo={Banner_A_Propos}
         className="Photo_BannerAPropos"

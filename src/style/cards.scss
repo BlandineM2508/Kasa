@@ -1,6 +1,7 @@
 .Background_Card {
   background: #f6f6f6;
   margin-top: 60px;
+  margin-bottom: 60px;
   padding: 50px;
   border-radius: 25px;
 
@@ -66,7 +67,7 @@
 @media screen and (max-width: 1024px) {
   .Background_Card {
     background: none;
-    margin: 20px;
+    margin: 20px 20px 30px 20px;
     padding: 0px;
 
     .Link_Card {

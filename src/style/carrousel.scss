@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 425px;
+
   margin-top: 30px;
   margin-left: 80px;
   margin-right: 80px;
@@ -43,18 +44,18 @@
 @media screen and (max-width: 1024px) {
   .Carrousel {
     height: 255px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
 
     .Left_Arrow {
       height: 19px;
-      left: 30px;
+      left: 5%;
       top: 125px;
     }
 
     .Right_Arrow {
       height: 19px;
-      right: 30px;
+      right: 5%;
       top: 125px;
     }
 
@@ -64,10 +65,8 @@
 
     .Photo_Carrousel {
       width: 100%;
-      height: 255px;
+      height: 100%;
       border-radius: 10px;
-      margin-left: 20px;
-      margin-right: 20px;
     }
   }
 }

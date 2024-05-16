@@ -1,10 +1,10 @@
 import Banner from '../components/banner'
 import Cards from '../components/cards'
-import Banner_Home from '../../public/assets/banner_home.png'
+import Banner_Home from '../../public/assets/banner_home.webp'
 
 export default function Home() {
   return (
-    <div className="content">
+    <div className="layout">
       <Banner
         texte="Chez vous, partout et ailleurs"
         photo={Banner_Home}

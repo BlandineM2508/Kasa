@@ -40,17 +40,17 @@
 @media screen and (max-width: 1024px) {
   .Carrousel {
     height: 255px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .Carrousel .Left_Arrow {
     height: 19px;
-    left: 30px;
+    left: 5%;
     top: 125px;
   }
   .Carrousel .Right_Arrow {
     height: 19px;
-    right: 30px;
+    right: 5%;
     top: 125px;
   }
   .Carrousel .Index_Indication {
@@ -58,9 +58,7 @@
   }
   .Carrousel .Photo_Carrousel {
     width: 100%;
-    height: 255px;
+    height: 100%;
     border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 }/*# sourceMappingURL=carrousel.css.map */

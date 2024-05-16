@@ -4,7 +4,7 @@ import Logements from '../components/logements'
 
 export default function Logement_Page() {
   return (
-    <div>
+    <div className="layout">
       <div>
         <Gallery />
         <Logements />
