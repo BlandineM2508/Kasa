@@ -1,7 +1,7 @@
 import Banner from '../components/banner'
-import Banner_A_Propos from '../../public/assets/banner_a_propos.webp'
+import Banner_A_Propos from '/assets/banner_a_propos.webp'
 import CollapseSection from '../components/collapse'
-import Arrow_Collapse from '../../public/assets/collapse_arrow.svg'
+import Arrow_Collapse from '/assets/collapse_arrow.svg'
 import '../style/logement_infos.scss'
 import aboutList from '../../public/aboutList.json'
 

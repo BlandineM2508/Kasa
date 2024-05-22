@@ -1,6 +1,6 @@
 import Banner from '../components/banner'
 import Cards from '../components/cards'
-import Banner_Home from '../../public/assets/banner_home.webp'
+import Banner_Home from '/assets/banner_home.webp'
 
 export default function Home() {
   return (

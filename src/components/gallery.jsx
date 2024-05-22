@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import data from '../../public/logements.json'
-import Right_Arrow from '../../public/assets/right_arrow.svg'
-import Left_Arrow from '../../public/assets/left_arrow.svg'
+import Right_Arrow from '/assets/right_arrow.svg'
+import Left_Arrow from '/assets/left_arrow.svg'
 import '../style/carrousel.scss'
 
 const Gallery = () => {
